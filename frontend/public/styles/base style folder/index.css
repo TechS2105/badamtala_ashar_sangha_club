@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Devanagari:wght@100..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+
+}
+
+@font-face {
+    font-family: 'vaidik_font';
+    src: url('../../fonts/Advait-JpGKn.ttf');
+}
+
+@font-face {
+    font-family: 'kingthings_petrock_light_font';
+    src: url('../../fonts/kingthings-petrock/Kingthings\ Petrock\ light.ttf');
+}
+
+@font-face {
+    font-family: 'kingthings_petrock_regular_font';
+    src: url('../../fonts/kingthings-petrock/Kingthings\ Petrock.ttf');
+}
+
+
+:root{
+
+    --primary-color: #15793D;
+    --secondary-color: #F7EE39;
+    --third-color: #C39635;
+    --fourth-color: #292929;
+    --fifth-color: #ffffffff;
+    --primary-font: vaidik_font; 
+    --secondary-font: "Noto Sans Devanagari", sans-serif;
+    --third-font: "Josefin Sans", sans-serif;
+    --fourth-font: kingthings_petrock_light_font;
+    --fifth-font: kingthings_petrock_regular_font;
+
+}

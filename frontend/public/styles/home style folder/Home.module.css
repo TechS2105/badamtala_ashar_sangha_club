@@ -1,0 +1,235 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+
+    width: 100%;
+    height: auto;
+    
+
+}
+
+/** Banner Section */
+.bannerSection{
+
+    width: 100%;
+    height: 45rem;
+    margin-top: -160px;
+    background-color: var(--fourth-color);
+
+}
+
+/** Swiper Section */
+.swiperSection{
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+/** Swiper Slide Section */
+.swiperSlideSection{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+/** Swiper Slide Image Section */
+.swiperSlideSection > .imageSection{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-700px);
+    filter: blur(20px);
+    transition: all 2s ease-in-out 0.6s;
+    border-radius: 0px 0px 50000px 50000px;
+    corner-shape: bevel;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px var(--fifth-color), 0px 0px 200px var(--third-color);
+
+}
+
+:global(.swiper-slide-active) .imageSection {
+
+    transform: translateY(0px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    border-bottom: 0px solid var(--fifth-color);
+    border-radius: 0px;
+    corner-shape: none;
+    filter: blur(0px);
+    transition-delay: 1s;
+    transition-property: transform, opacity, filter, border-radius, border-bottom, corner-shape;
+
+}
+
+.imageSection > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+
+}
+
+/** Swiper Slide Image Section Color Overlay */
+.imageSection > .colorOverlay{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff00, #292929);
+
+}
+
+/** Swiper Slide Image Details Section */
+.swiperSlideSection > .imageDetailsSection{
+
+    position: absolute;
+    top: 55%;
+    left: 30px;
+    width: 60%;
+    height: 20rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    transition:  all 2s ease;
+
+}
+
+:global(.swiper-slide-active) .imageDetailsSection{
+
+    opacity: 1;
+    transition-delay: 2s;
+    transition-property: opacity;
+
+}
+
+/** Swiper Slide Image Inner Details Section */
+.imageDetailsSection > .imageInnerDetailsSection{
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.imageInnerDetailsSection > span{
+
+    font-family: var(--fourth-font);
+    font-size: 25px;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    background-color: var(--primary-color);
+    padding: 5px 100px 5px 10px;
+    border-radius: 0px 100px 0px 0px;
+    corner-shape: bevel;
+    margin-bottom: 10px;
+    display: inline-flex;
+    font-weight: bold;
+    transform: translateY(-2000px);
+    transition: all 2s ease;
+    opacity: 0;
+
+}
+
+:global(.swiper-slide-active) .imageInnerDetailsSection > span{
+
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: 1s;
+    transition-property: transform, opacity;
+
+}
+
+.imageInnerDetailsSection > h3{
+
+    font-family: var(--fourth-font);
+    font-size: 50px;
+    color: var(--fifth-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transform: translateX(-2000px);
+    transition: all 2.5s ease;
+
+}
+
+:global(.swiper-slide-active) .imageInnerDetailsSection > h3{
+
+    transform: translateX(0px);;
+    transition-delay: 2s;
+    transition-property: transform;
+
+}
+
+.imageInnerDetailsSection > p{
+
+    color: var(--fifth-color);
+    font-family: var(--fourth-font);
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all 2s ease;
+
+}
+
+:global(.swiper-slide-active) .imageInnerDetailsSection > p{
+
+    transform: scaleY(1);
+    opacity: 1;
+    transition-delay: 3s;
+    transition-property: transform, opacity;
+
+}
+
+/** Swiper Pagination */
+.swiperSection > .swiper_pagination{
+
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 25px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.swiper_pagination > :global(.swiper-pagination-bullet){
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    corner-shape: scoop;
+    background-color: var(--fifth-color);
+    opacity: 0.8;
+    transition: all 0.5s ease;
+
+}
+
+.swiper_pagination > :global(.swiper-pagination-bullet-active){
+
+    background-color: var(--secondary-color);
+    opacity: 1;
+
+}
+
