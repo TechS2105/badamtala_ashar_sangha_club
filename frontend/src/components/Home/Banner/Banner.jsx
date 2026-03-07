@@ -2,16 +2,12 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
+import BannerImage from '../Banner/Bannerimage';
+import BannerContent from '../Banner/Bannercontent';
 
 function Banner({ HomeStyle }) {
-
-    const pagination = {
-
-        clickable: true,
-
-    }
 
     const [getBannerApi, setGetBannerApi] = useState([]);
     
@@ -75,27 +71,20 @@ function Banner({ HomeStyle }) {
                             <SwiperSlide className={HomeStyle.swiperSlideSection} key={idx}>
 
                                 {/** Image Section */}
-                                <div className={HomeStyle.imageSection}>
-
-                                    {/** Color Overlay */}
-                                    <div className={HomeStyle.colorOverlay}></div>
-                                    <img src={bannerItem.banner_image} alt={bannerItem.banner_image_altText} />
-
-                                </div>
+                                <BannerImage
+                                
+                                    HomeStyle={HomeStyle}
+                                    bannerItem={bannerItem}
+                                    
+                                />
 
                                 {/** Image Details Section */}
-                                <div className={HomeStyle.imageDetailsSection}>
-
-                                    {/** Image Inner Details Section */}
-                                    <div className={HomeStyle.imageInnerDetailsSection}>
-
-                                        <span> {bannerItem.banner_details[0].spanTitle} </span>
-                                        <h3> {bannerItem.banner_details[0].mainTitle} </h3>
-                                        <p> {bannerItem.banner_details[0].description} </p>
-
-                                    </div>
-
-                                </div>
+                                <BannerContent
+                                
+                                    HomeStyle={HomeStyle}
+                                    bannerItem={bannerItem}
+                                    
+                                />
 
                             </SwiperSlide> 
 
@@ -109,7 +98,6 @@ function Banner({ HomeStyle }) {
                 </Swiper>
 
             </div>
-
             
         </>
 

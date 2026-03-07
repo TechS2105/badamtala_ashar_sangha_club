@@ -1,5 +1,6 @@
 import React from 'react';
-import Banner from '../Home/Banner';
+import Banner from '../Home/Banner/Banner';
+import MarqueeText from '../Reuseable Component/Marqueetext';
 import HomeStyle from '../../../public/styles/home style folder/Home.module.css'
 
 function Home() {
@@ -17,6 +18,9 @@ function Home() {
                     HomeStyle={HomeStyle}
                     
                 />
+
+                {/** Maruqee Text */}
+                <MarqueeText/>
 
             </main>
             
