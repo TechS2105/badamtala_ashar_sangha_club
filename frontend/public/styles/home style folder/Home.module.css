@@ -91,7 +91,7 @@ main{
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #ffffff00, #292929);
+    background-image: linear-gradient(to bottom, #ffffff00 70%, #292929bf);
 
 }
 
@@ -232,4 +232,276 @@ main{
     opacity: 1;
 
 }
+
+/** About Section */
+.aboutSection{
+
+    width: 100%;
+    height: 200vh;
+    background-image: url('../../../public/images/Banner/b_image5.webp');
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20rem;
+
+}
+
+/** About Image Overlay */
+.aboutSection > .imageOverlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #c3963554, #292929ca);
+
+}
+
+/** About Content Section */
+.aboutSection > .contentSection{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+/** Inner About Content section */
+.contentSection > .innerContentSection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.innerContentSection > span{
+
+    color: var(--fifth-color);
+    font-family: var(--fourth-font);
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.innerContentSection > span::after{
+
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    width: 50%;
+    height: 3px;
+    content: "";
+
+}
+
+.innerContentSection > h2{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--fifth-color);
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+
+}
+
+.innerContentSection > p{
+
+    color: var(--fifth-color);
+    text-align: center;
+    width: 1300px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-family: var(--fourth-font);
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+
+.innerContentSection > a{
+
+    margin-top: 20px;
+    color: var(--fifth-color);
+    font-family: var(--fourth-font);
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-color);
+    padding: 10px 50px;
+    border-radius: 50px;
+    corner-shape: scoop;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.5s ease;
+
+}
+
+.innerContentSection > a:hover{
+
+    color: var(--primary-color);
+
+}
+
+.innerContentSection > a::after{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fifth-color);
+    z-index: -2;
+    content: "";
+    border-radius: 50px;
+    corner-shape: scoop;
+    transform: scale(0);
+    transition: all 0.8s ease;
+    opacity: 0;
+    filter: blur(50px);
+
+}
+
+.innerContentSection > a:hover::after{
+
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+
+}
+
+.innerContentSection a > svg{
+
+    margin-left: -20px;
+    color: var(--secondary-color);
+    transform: scale(0) translateX(-20px);
+    transition: all 0.5s ease;
+    opacity: 0;
+
+} 
+
+.innerContentSection a:hover > svg{
+
+    margin-left: 20px;
+    transform: scale(1) translateX(0px);
+    opacity: 1;
+
+}
+
+/** Card Highlight Section */
+.aboutSection > .cardHighlightSection{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    /* background-color: red; */
+    overflow: hidden;
+
+}
+
+/** Swiper Section */
+.cardHighlightSection > .aboutswiperSection{
+
+    margin-top: 150px;
+    padding: 0px 50px 0px 30px;
+    width: 85%;
+    overflow: hidden;
+
+}
+
+/** Swiper Slide Section */
+.aboutswiperSlideSection{
+
+    width: 350px;
+    height: 550px;
+    border: 2px solid #ffffff;;
+    border-radius: 50px 50px 50px 50px;
+    backdrop-filter: blur(3px);
+    corner-shape: bevel;
+    overflow: hidden;
+
+}
+
+/** SVG Div */
+.aboutswiperSlideSection > .svgIconDiv{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.svgIconDiv > svg{
+
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+
+}
+
+/** Title Div */
+.aboutswiperSlideSection > .titleDiv{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titleDiv > h3{
+
+    color: var(--fifth-color);
+    font-family: var(--fourth-font);
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+
+/** Para Section */
+.aboutswiperSlideSection > .paraDiv{
+
+    width: 100%;
+    height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.paraDiv > p{
+
+    width: 250px;
+    color: var(--fourth-color);
+    font-family: var(--fourth-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
 
