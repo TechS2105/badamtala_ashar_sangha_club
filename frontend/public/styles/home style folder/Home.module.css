@@ -321,12 +321,12 @@ main{
 
     color: var(--fifth-color);
     text-align: center;
-    width: 1300px;
-    line-height: 25px;
+    width: 1400px;
+    line-height: 30px;
     margin-bottom: 10px;
     font-family: var(--fourth-font);
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
 }
 
@@ -409,15 +409,15 @@ main{
     width: 100%;
     height: 60%;
     /* background-color: red; */
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
 /** Swiper Section */
 .cardHighlightSection > .aboutswiperSection{
 
-    margin-top: 150px;
-    padding: 0px 50px 0px 30px;
+    margin-top: 100px;
+    padding: 30px 50px 0px 30px;
     width: 85%;
     overflow: hidden;
 
@@ -431,8 +431,20 @@ main{
     border: 2px solid #ffffff;;
     border-radius: 50px 50px 50px 50px;
     backdrop-filter: blur(3px);
-    corner-shape: bevel;
+    corner-shape:  notch notch;
     overflow: hidden;
+    transition: all 0.5s ease;
+
+}
+
+.aboutswiperSlideSection:hover{
+
+    position: relative;
+    transform: translateY(-20px) scale(1.02);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff, 0px 0px 50px #C39635;
+    border-radius: 50px;
+    corner-shape: scoop;
 
 }
 
@@ -447,15 +459,36 @@ main{
 
 }
 
-.svgIconDiv > svg{
+.svgIconDiv > .innerSvgIconDiv{
 
-    color: var(--secondary-color);
-    font-size: 50px;
-    padding: 10px;
-    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.5s ease;
 
 }
+
+.innerSvgIconDiv > svg{
+
+    fill: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease;
+
+}
+
+.aboutswiperSlideSection:hover .svgIconDiv > .innerSvgIconDiv{
+
+    transform: scale(1.1) rotateY(180deg);
+    background-color: var(--fifth-color);
+
+} 
 
 /** Title Div */
 .aboutswiperSlideSection > .titleDiv{
@@ -489,18 +522,32 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all 0.5s ease;
+
+}
+
+.aboutswiperSlideSection:hover > .paraDiv{
+
+    background-color: var(--third-color);
 
 }
 
 .paraDiv > p{
 
-    width: 250px;
+    width: 300px;
     color: var(--fourth-color);
     font-family: var(--fourth-font);
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 18px;
     line-height: 25px;
+    transition: all 0.5s ease;
+
+}
+
+.aboutswiperSlideSection:hover .paraDiv > p{
+
+    color: var(--secondary-color);
 
 }
 

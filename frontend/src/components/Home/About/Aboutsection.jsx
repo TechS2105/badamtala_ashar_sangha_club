@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaTheaterMasks } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import MaskSVG from '../../SVG/Masksvg';
+import DiyaSVG from '../../SVG/Diyasvg';
+import CulturalSVG from '../../SVG/Culturalsvg';
+import DevotionSVG from '../../SVG/Devotionsvg';
+import ComunitySVG from '../../SVG/Comunitysvg';
 
 function Aboutsection({HomeStyle}) {
     
@@ -47,7 +51,8 @@ function Aboutsection({HomeStyle}) {
                         speed={2000}
                         autoplay={{
 
-                            delay: 2500
+                            delay: 2500,
+                            pauseOnMouseEnter: true
 
                         }}
 
@@ -62,7 +67,12 @@ function Aboutsection({HomeStyle}) {
                             {/** SVG Icon Div */}
                             <div className={HomeStyle.svgIconDiv}>
 
-                                <FaTheaterMasks />
+                                {/** Inner SVG Icon Div */}
+                                <div className={HomeStyle.innerSvgIconDiv}>
+
+                                    <MaskSVG/>
+
+                                </div>
 
                             </div>
 
@@ -88,7 +98,12 @@ function Aboutsection({HomeStyle}) {
                             {/** SVG Icon Div */}
                             <div className={HomeStyle.svgIconDiv}>
 
-                                <FaTheaterMasks />
+                                {/** Inner SVG Icon Div */}
+                                <div className={HomeStyle.innerSvgIconDiv}>
+
+                                    <DiyaSVG/>
+
+                                </div>
 
                             </div>
 
@@ -114,7 +129,12 @@ function Aboutsection({HomeStyle}) {
                             {/** SVG Icon Div */}
                             <div className={HomeStyle.svgIconDiv}>
 
-                                <FaTheaterMasks />
+                                {/** Inner SVG Icon Div */}
+                                <div className={HomeStyle.innerSvgIconDiv}>
+
+                                    <CulturalSVG/>
+
+                                </div>
 
                             </div>
 
@@ -140,7 +160,43 @@ function Aboutsection({HomeStyle}) {
                             {/** SVG Icon Div */}
                             <div className={HomeStyle.svgIconDiv}>
 
-                                <FaTheaterMasks />
+                                {/** Inner SVG Icon Div */}
+                                <div className={HomeStyle.innerSvgIconDiv}>
+
+                                    <DevotionSVG/>
+
+                                </div>
+
+                            </div>
+
+                            {/** Title Div */}
+                            <div className={HomeStyle.titleDiv}>
+
+                                <h3>Creative Theme Pandal</h3>
+
+                            </div>
+
+                            {/** Para Div */}
+                            <div className={HomeStyle.paraDiv}>
+
+                                <p>Every year Badamtala Ashar Sangha presents a unique theme-based pandal that blends artistic imagination with cultural storytelling. The creative installations transform the entire neighborhood into a captivating visual experience for thousands of visitors.</p>
+
+                            </div>
+
+                        </SwiperSlide>
+
+                        {/** Swiper Slide */}
+                        <SwiperSlide className={HomeStyle.aboutswiperSlideSection}>
+
+                            {/** SVG Icon Div */}
+                            <div className={HomeStyle.svgIconDiv}>
+
+                                {/** Inner SVG Icon Div */}
+                                <div className={HomeStyle.innerSvgIconDiv}>
+
+                                    <ComunitySVG/>
+
+                                </div>
 
                             </div>
 
