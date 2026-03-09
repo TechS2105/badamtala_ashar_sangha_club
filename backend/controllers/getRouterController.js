@@ -1,6 +1,7 @@
 import HomeBannerApi from '../api/home_banner_api.js';
 import MarqueeeTextApi from '../api/marquee_text_api.js';
 import HomeAboutCardApi from '../api/home_about_highlight_card_api.js';
+import HomeAboutContentApi from '../api/home_about_content_api.js';
 
 /** Root Router Controller */
 const getRootRouter = (req, res) => {
@@ -30,11 +31,19 @@ const getHomeAboutCardApi = (req, res) => {
 
 }
 
+/** GET Home About Section Content API */
+const getHomeAboutContentApi = (req, res) => {
+
+    res.status(200).json(HomeAboutContentApi);
+
+}
+
 export default {
 
     getRootRouter,
     getHomeBannerApi,
     getMarqueeTextApi,
-    getHomeAboutCardApi
+    getHomeAboutCardApi,
+    getHomeAboutContentApi
 
 }
