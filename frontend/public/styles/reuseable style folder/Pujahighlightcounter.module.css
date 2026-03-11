@@ -29,15 +29,13 @@
     text-align: center;
     transition: all 0.8s ease;
     border-right: 1px solid #292929;
-    border-bottom: 0px solid transparent;
 
 }
 
 .highlightBox:hover{
 
-    transform: scale(1.1) translateY(-20px);
-    border-right: 0px solid transparent;
-    border-bottom: 1px solid #292929;
+    transform: scale(1.1) translateY(-10px);
+
 
 }
 
@@ -72,20 +70,83 @@
 
 }
 
-.highlightBox:nth-child(odd) > svg{
+.highlightBox:nth-child(odd) > .svgDiv{
 
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+
+}
+
+.highlightBox:nth-child(odd) .svgDiv > svg{
+
+    height: 100px;
     fill: var(--primary-color);
+    transition: all 0.8s ease;
+
+}
+
+.highlightBox:nth-child(odd):hover > .svgDiv{
+
+    background-color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+
+}
+
+.highlightBox:nth-child(odd):hover .svgDiv > svg{
+
+    transform: rotateY(180deg);
+    fill: var(--fifth-color);
+    width: 80px;
+    height: 80px;
 
 }
 
 /** Puja Highlight Counter Even Boxes*/
-.highlightBox:nth-child(even) > svg{
+.highlightBox:nth-child(even) > .svgDiv{
+
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+
+}
+.highlightBox:nth-child(even) .svgDiv > svg{
 
     width: 100px;
     height: 100px;
     fill: var(--third-color);
+    transition: all 0.8s ease;
+
+}
+
+.highlightBox:nth-child(even):hover > .svgDiv{
+
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: var(--third-color);
+    border-radius: 50px;
+
+}
+
+.highlightBox:nth-child(even):hover .svgDiv > svg{
+
+    width: 80px;
+    height: 80px;
+    transform: rotateY(-180deg);
+    fill: var(--fifth-color);
 
 }
 

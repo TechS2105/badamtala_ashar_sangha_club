@@ -18,7 +18,12 @@ function Pujahighlightcounter() {
                 {/** Highlight Box */}
                 <div className={PujaHighlightCounterStyle.highlightBox}>
 
-                    <YearsOfCelebrationSVG/>
+                    {/** SVG Div  */}
+                    <div className={PujaHighlightCounterStyle.svgDiv}>
+
+                        <YearsOfCelebrationSVG/>
+
+                    </div>
                     <h4> Years Of Celebration </h4>
                     <b><span>25+</span> <br/> Years</b>
                     <p>Celebrating the spirit of Sharod Utsav through devotion, creativity, and joyful participation of the entire community every year.</p>
@@ -27,7 +32,12 @@ function Pujahighlightcounter() {
                 {/** Highlight Box */}
                 <div className={PujaHighlightCounterStyle.highlightBox}>
 
-                    <FestivalVisitiorSVG />
+                    {/** SVG Div */}
+                    <div className={PujaHighlightCounterStyle.svgDiv}>
+
+                        <FestivalVisitiorSVG />
+
+                    </div>
                     <h4> Festival Visitors </h4>
                     <b><span>50K+</span> <br/> Visitors</b>
                     <p>Thousands of devotees and visitors gather every year to experience the artistic pandal and divine atmosphere.</p>
@@ -36,7 +46,12 @@ function Pujahighlightcounter() {
                 {/** Highlight Box */}
                 <div className={PujaHighlightCounterStyle.highlightBox}>
 
-                    <CreativeThemePandleSVG />
+                    {/** SVG Div  */}
+                    <div className={PujaHighlightCounterStyle.svgDiv}>
+
+                        <CreativeThemePandleSVG />
+
+                    </div>
                     <h4>Creative Themes</h4>
                     <b><span>20+</span> <br/>Unique Themes</b>
                     <p>Every year the club unveils a unique artistic concept combining cultural tradition with contemporary creative innovation.</p>
@@ -45,7 +60,12 @@ function Pujahighlightcounter() {
                 {/** Highlight Box */}
                 <div className={PujaHighlightCounterStyle.highlightBox}>
 
-                    <CulturalPerformanceSVG />
+                    {/** SVG Div */}
+                    <div className={PujaHighlightCounterStyle.svgDiv}>
+ 
+                        <CulturalPerformanceSVG />
+
+                    </div>
                     <h4>Cultural Performance </h4>
                     <b><span>100+</span> <br/> Cultural Events</b>
                     <p>Traditional music, dance, dhunuchi naach, and lively community events enhance the joyful atmosphere of the festival.</p>
@@ -54,7 +74,12 @@ function Pujahighlightcounter() {
                 {/** Highlight Box */}
                 <div className={PujaHighlightCounterStyle.highlightBox}>
 
-                    <AwardRecognition />
+                    {/** SVG Div */}
+                    <div className={PujaHighlightCounterStyle.svgDiv}>
+
+                        <AwardRecognition />
+
+                    </div>
                     <h4>Awards & Recognition</h4>
                     <b><span>10+</span> <br /> Recognitions</b>
                     <p>Recognized for its creativity, craftsmanship, and rich cultural expression, the puja continues to inspire visitors every year.</p>
